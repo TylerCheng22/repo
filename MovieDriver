@@ -1,1 +1,36 @@
+import java.util.Scanner;
 
+public class MovieDriver {
+
+	public static void main(String[] args) {
+		
+		char yesno='y';
+		while (yesno=='y')
+		{
+		//Task 1
+		
+		Scanner input = new Scanner(System.in);
+		
+		Movie m = new Movie();
+		System.out.println("Enter your movie title:");
+		String title = input.nextLine();
+		m.setTitle(title);
+		System.out.println("Enter your movie's rating:");
+		String rating = input.nextLine();
+		m.setRating(rating);
+		System.out.println("Enter number of tickets sold:");
+		int soldTickets = input.nextInt();
+		m.setSoldTickets(soldTickets);
+
+		System.out.println(m.toString());
+		
+		//Task 2
+		
+		System.out.println("Do you want to enter another? (y or n)");
+		yesno = input.next().charAt(0);
+		
+		}
+		
+	}
+	
+}
