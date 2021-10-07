@@ -54,6 +54,12 @@ public class FXMainPane extends VBox {
 		button4 = new Button("Clear");
 		button5 = new Button("Exit");
 		
+		button1.setOnAction(new ButtonHandler());
+		button2.setOnAction(new ButtonHandler());
+		button3.setOnAction(new ButtonHandler());
+		button4.setOnAction(new ButtonHandler());
+		button5.setOnAction(new ButtonHandler());
+		
 		textfield = new TextField();
 		label = new Label();
 		
